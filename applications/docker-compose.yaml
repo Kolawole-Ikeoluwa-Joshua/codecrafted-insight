@@ -1,12 +1,5 @@
 version: "3"
 services:
-  go-application:
-    build:
-      context: ./go-application
-    container_name: go-application
-    image: go-application
-    ports:
-      - "80:5000"
   python-application:
     build:
       context: ./python-application
@@ -31,7 +24,7 @@ services:
   prometheus:
     container_name: prometheus-svc
     image: prom/prometheus
-    ports: 
+    ports:
       - "9091:9090"
     command: --config.file=/etc/prometheus/prometheus.yaml
     volumes:
