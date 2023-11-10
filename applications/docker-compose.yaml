@@ -7,13 +7,6 @@ services:
     image: python-application
     ports:
       - "81:5000"
-  dotnet-application:
-    build:
-      context: ./dotnet-application
-    container_name: dotnet-application
-    image: dotnet-application
-    ports:
-      - "82:5000"
   nodejs-application:
     build:
       context: ./nodejs-application

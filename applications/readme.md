@@ -14,7 +14,6 @@ docker-compose up -d grafana-dashboards
 
 ```
 docker-compose up -d --build python-application
-docker-compose up -d --build dotnet-application
 docker-compose up -d --build nodejs-application
 ```
 
@@ -22,7 +21,6 @@ docker-compose up -d --build nodejs-application
 
 ```
 http://localhost:81 #Python
-http://localhost:82 #Dotnet
 http://localhost:83 #NodeJS
 ```
 
